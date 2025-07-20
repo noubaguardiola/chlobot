@@ -76,7 +76,7 @@ async def on_message(message: discord.Message):
 
          
 #ajout de differentes manieres de demander ça va pour ne pas limiter l'utilisateur
-    elif content in ['ça va?', 'ca va?', 'ça va', 'ca va']:
+    elif content in ['ça va?', 'ca va?', 'ça va', 'ca va', 'ça va ?', 'ca va ?']:
         channel = message.channel
         author = message.author
         reponses = [
@@ -103,7 +103,7 @@ async def on_message(message: discord.Message):
 
     #si le message n'est pas compris
     else:
-        await message.channel.send("Je n'ai pas compris. Tape `/blague` pour découvrir ce que je peux faire.")
+        await message.channel.send("Je n'ai pas compris. Tape `/help` pour découvrir ce que je peux faire.")
 
     await bot.process_commands(message)
 
