@@ -5,7 +5,10 @@ from discord.ext import commands
 import random
 from discord import app_commands
 from typing import List
+from keepalive import keepalive
 load_dotenv()
+
+keepalive=()
 
 print("Lancement du bot...")
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all()) #acces a discord
