@@ -8,7 +8,7 @@ from typing import List
 from keepalive import keepalive
 load_dotenv()
 
-keepalive=()
+keepalive()
 
 print("Lancement du bot...")
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all()) #acces a discord
