@@ -54,7 +54,7 @@ async def on_message(message: discord.Message):
     #permettre au bot de reconnaitre un mot avec des capitales ou miniscules
     content = message.content.lower().strip()
 
-    if content == 'bonjour':
+    if content ['bonjour', 'bonjour!', 'bonjour !', 'salut', 'salut!', 'salut !', 'coucou', 'coucou!', 'coucou !']:
         channel = message.channel
         author = message.author
         #dictionnaire pour stocker les différentes réponses
